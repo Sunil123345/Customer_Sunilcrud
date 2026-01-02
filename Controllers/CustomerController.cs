@@ -55,16 +55,16 @@ namespace CustomerReactiveForms.Controllers
 
             return Ok(data);
         }
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetCustomer(int id)
-        {
-            var customer = await _context.Customers.FindAsync(id);
-            if(customer==null)
-            {
-                return NotFound();
-            }
-            return Ok(customer);
-        }
+        //[HttpGet("{id}")]
+        //public async Task<IActionResult> GetCustomer(int id)
+        //{
+        //    var customer = await _context.Customers.FindAsync(id);
+        //    if(customer==null)
+        //    {
+        //        return NotFound();
+        //    }
+        //    return Ok(customer);
+        //}
         [HttpPost]
         public async Task<IActionResult> CreateCustomer([FromBody] Customer customer)
         {
