@@ -1,0 +1,6 @@
+@CustomerReactiveForms_HostAddress = http://localhost:5063
+
+GET {{CustomerReactiveForms_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
