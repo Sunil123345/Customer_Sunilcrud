@@ -11,6 +11,6 @@ namespace CustomerReactiveForms.Model
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Country> Countries { get; set; }
         public DbSet<State> States { get; set; }
-        public DbSet<CIty> Cities { get; set; }
+        public DbSet<CIty> Cities { get;set; }
     }
 }
